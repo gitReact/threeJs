@@ -1,0 +1,163 @@
+@import "commonstyle.less";
+// z转盘
+.d-drawLottery{
+    width: 100vw;
+    height: 93.2vw;
+    .pos(a);
+    top: 38vw;
+    .d-letteryBg{
+        height: 89.6vw;
+        width: 89.3333vw;
+         background: url(//pic1.iqiyipic.com/common/20181112/adonisaLottoyZhuanPan_03.png) no-repeat scroll center top / 100% auto;
+         .pos(a);
+         left: 5.5vw;
+         top: 1.4vw;
+    }
+    .d-drawsButton{
+        width: 26.4vw;
+        height: 35.2vw;;
+         background: url(//pic3.iqiyipic.com/common/20181112/adonisaLottoyDrawBtn.png) no-repeat scroll center top / 100% auto;
+         .pos(a);
+         left: 37vw;
+        top: 33vw;
+    }
+}
+
+// 九宫格
+.d-drawLotterySouke{
+    .pos(a);
+    .whlt(89.3333vw,69.3333vw,0,4.6667vw);
+    background: url(//pic2.iqiyipic.com/common/20201121/welfareSoukeback.png) no-repeat scroll center top / 100% auto;
+    z-index:2;
+    .default-lotteryDraw{
+        .pos(a);
+        .whlt(87vw,91vw,3.2vw,4vw);
+        .br(2vw);
+        .default-content{
+            width: 100%;
+            height: 100%;
+        }
+        
+        .default-lottery{
+            width: 91vw;
+            height: 50vw;
+            font-size: 0;
+        }
+        .default-giftEach{
+            .dib;
+            .lets(0);
+            .pos(r);
+            margin: 0.7vw;
+            z-index: 1;
+            .wh(26.6667vw,28.2667vw);
+            .br(2vw);
+            background:#8f511a;
+            background-size: 100% 100%;
+            .overh;
+            &::before{
+                content: '';
+                background:#fcac65;
+                background-image:linear-gradient(-90deg, #fbd99e 0%, #c78137) !important;
+                background-image: -webkit-linear-gradient(-90deg, #fbd99e 0%, #c78137) !important;    
+                .br(2vw);
+                // top: -1.5vw; 
+                .wh(26.6667vw,26.5333vw);
+                .pos(a);
+            }
+            .d-img{
+                .pos(a);
+                img{
+                    .wh(100%,100%);
+                }
+            }
+            .d-mark{
+                .pos(a);
+                .whlt(15.3333vw,4.4vw,0.5vw,11.3vw);
+                img{
+                    .wh(100%,100%);
+                }
+                
+            }
+
+            .pic1{
+                .whlt(20vw,20vw,2vw,3.2vw);
+                  
+            }
+            .pic2{
+                .whlt(14.5333vw,19.3333vw,2.5333vw,5.7333vw);
+            }
+            .pic3{
+                .whlt(13.2vw,14.5333vw,4.9333vw,7vw);
+            }
+            .pic4{
+                .whlt(18vw,19.6vw,2.4vw,4.8vw);
+            }
+            .pic5{
+                .whlt(15.0667vw,16.9333vw,2.9333vw,6.9333vw);
+            }
+            .pic6{
+                .whlt(23.2vw,17.6vw,2.8vw,2.2vw);
+            }
+            .pic7{
+                .whlt(20vw,20vw,0.2vw,4.1vw);
+            }
+            .pic8{
+                .whlt(20.2667vw,16.1333vw,2.5vw,3vw);
+            }
+
+            .d-desCont{
+                
+                .pos(a);
+                width: 100%;;
+                top: 18.6vw;
+                .lh(3.5vw);
+                .d-tit,.d-des,.d-des2{
+                    color:#fbeac4;
+                    .tc;
+                    .fz(0.11rem);
+                    width: 100%;;
+                }
+            }
+            .d-desCont.d-dst{
+                top: 21vw;
+            }
+            
+        }
+
+        .default-giftEach.selected{
+            background:#a37025;
+            &::before{
+                content: '';
+                background:#fbebc5;
+                background-image:linear-gradient(-90deg, #fffffe 0%, #fbebc5) !important;
+                background-image: -webkit-linear-gradient(-90deg, #fffffe 0%, #fbebc5) !important;    
+            }
+            .d-tit,.d-des{
+                color:#d19639;
+            }
+
+        }
+        .default-giftGet{
+            .wh(26.6667vw,28.1333vw);
+            .dib;
+            padding:0 0.7vw 0 0.4vw;
+            margin-left: .4vw;
+            z-index: 50;
+           .pos(r);
+            top: -0.8vw;
+            img{
+                .wh(100%,100%);
+            }
+        }
+       
+        
+
+
+    }
+
+
+
+}
+
+
+

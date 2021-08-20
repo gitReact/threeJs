@@ -1,0 +1,108 @@
+
+@import "comLess/commonstyle.less";
+@import "comLess/defaultPopUp.less";
+@import "page/navBars.less";
+@import "page/toast.less";
+@import "page/loading.less";
+@import "page/w-firstscreen.less";
+@import "page/w-slotmachinedraw.less";
+@import "page/w-vipdongcheng.less";
+@import "page/w-welfarefuncont.less";
+@import "page/w-beautymwelfare.less";
+@import "page/default-suctionbottom.less";
+@import "page/w-welfareVideo.less";
+
+
+@font-face {
+    font-family: "fzltthj";
+    src: url("//static-s.iqiyi.com/lequ/20210801/fzltthj.eot");
+    src: url("//static-s.iqiyi.com/lequ/20210801/fzltthj.woff");
+    src: url("//static-s.iqiyi.com/lequ/20210801/fzltthj.ttf") format("truetype");
+    src: url("//static-s.iqiyi.com/lequ/20210801/fzltthj.svg") format("svg");
+}
+
+@font-face {
+    font-family: "FZLTCHJ";
+    src: url("//static-s.iqiyi.com/lequ/20210801/FZLTCHJ.ttf") format("truetype");
+}
+
+body {
+    .bg(#004fc5);
+    // .backlg(180deg,#3a1d17 0%,#44211d 50%,#3a1d17 100%);
+    font-family: "Helvetica Neue",helvetica,arial,sans-serif;
+    .fz(0.14rem);
+    width: 100vw;
+    color: #333;
+    .bg(#004fc5);
+    .pos(r);
+    overflow-x: hidden;
+}   
+
+
+
+
+.keyframes(zoomlottery,{
+    0%{
+        .transform(scale(1));
+    }
+    50%{
+        .transform(scale(1.1));
+    }
+    100%{
+        .transform(scale(1));
+    }
+});
+
+
+.keyframes(zoomScale,{
+    0%{
+        .transform(scale(1));
+    }
+    100%{
+        .transform(scale(1.1));
+    }
+});
+
+
+
+.keyframes(zoomSmall,{
+    0%{
+        .transform(scale(1.1));
+    }
+    100%{
+        .transform(scale(1));
+    }
+});
+
+.d-runstart{
+    &:hover{
+        .animaInCom(zoomSmall,0.2s,ease-in,forwards);
+     }
+     &:active{
+        .animaInCom(zoomScale,0.2s,ease-in,forwards);
+     }  
+}
+
+.default-gofulibt{
+    .pos(f);
+    background: url(//pic3.iqiyipic.com/lequ/20210719/c55272659a77461598c4fd3d6053d27a.png)  no-repeat scroll center top / 100% auto;
+    .whlt(17.867vw,21.3333vw,65vw,0);
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

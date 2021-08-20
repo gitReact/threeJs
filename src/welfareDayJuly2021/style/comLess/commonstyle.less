@@ -1,0 +1,479 @@
+html{
+    font-size: 100px;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+@media screen and (min-width: 375px){
+    html {
+        font-size: 100px;
+        font-size: 26.66666667vw;
+    }
+}
+body, div{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    // background-color:#ee882d !important;
+    // background-image:linear-gradient(90deg, #18081d 0%, #100715 40%,#18081d 99%);
+    // background-image:-webkit-linear-gradient(90deg, #18081d 0%, #100715 40%,#18081d 99%);
+    font-family: "Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: .14rem;
+    line-height: 1;
+    color: #333;
+    .pos(r);
+    overflow-x: hidden;
+ 
+} 
+
+blockquote,body,button,dd,dl,dt,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,menu,ol,p,pre,select,td,textarea,th,ul {
+    margin: 0;
+    padding: 0
+}
+a, a:hover, a:active, a:visited, a:link, a:focus{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+audio,canvas,video {
+    display: inline-block
+}
+button{
+    border: 0;
+    background-color: transparent;
+ 
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400
+}
+
+h2 {
+    font-size: 14px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h1,h4,h5,h6 {
+    font-size: 100%
+}
+
+address,cite,dfn,em,i,var {
+    font-style: normal
+}
+
+strong {
+    font-weight: 400
+}
+
+ol,ul {
+    list-style: none
+}
+
+button,input,select,textarea {
+    font-family: inherit;
+    font-size: 100%
+}
+
+button,html input[type=button],input[type=reset],input[type=submit] {
+    -webkit-appearance: button
+}
+
+textarea {
+    overflow: hidden;
+    vertical-align: top
+}
+
+input,textarea {
+    -webkit-appearance: none
+}
+
+input[type=search] {
+    -webkit-appearance: none
+}
+.db{
+    display: block;
+}
+.di{
+    display: inline;
+}
+.dib{
+    display: inline-block
+}
+
+.tl{
+    text-align: left;
+}
+.tc{
+    text-align: center;
+}
+.tr{
+    text-align: right;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cb {
+    clear: both
+}
+.vm {
+    vertical-align: middle
+}
+.vt{
+    vertical-align: top;
+}
+.dn{
+    display: none !important;
+}
+.hide{
+    display: none;
+}
+.tdu{
+    text-decoration: underline;
+}
+.overh{
+    overflow: hidden;
+}
+.overA{
+    overflow: auto;
+}
+.overV{
+    overflow: visible;
+}
+.tlZ{
+    top:0;
+    left:0;
+}
+
+.box{
+    display: -webkit-box;
+    display: box;
+}
+
+.flex{
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+}
+.bsb{
+    box-sizing: border-box;
+}
+.lets(@n:0){
+    letter-spacing: @n;
+}
+.bgnr{
+    background-repeat: no-repeat;
+}
+.bpc(@c:center){
+    background-position: @c;
+}
+.bgs(@s:100%){
+    background-size: @s;
+}
+.tid(@t:1w){
+    text-indent: @t;
+}
+// common end
+// location
+.pos(a){
+    position: absolute;
+}
+.pos(r){
+    position: relative;
+}
+.pos(f){
+    position: fixed;
+}
+
+.ptl(@top:5px,@left:5px){
+    top:@top;
+    left:@left;
+}
+.fw{
+    font-weight: bold;
+}
+.wh(@w:10vw,@h:40vw){
+    width: @w;
+    height:@h;
+}
+.tr(@t:1vw,@r:1vw){
+    top:@t;
+    right: @r;
+}
+.br(@r:2vw){
+  border-radius: @r;
+}
+.lh(@h:2vw){
+    line-height: @h;
+}
+.fz(@f:2vw){
+    font-size: @f;
+}
+.ti(@t:4vw){
+    text-indent: 4vw;
+}
+.brtb(@tl:0% 1%,@tr:0% 1%,@bl:0% 1%,@br:0% 1%){
+   border-top-left-radius:@tl; 
+   -webkit-border-top-left-radius:@tl; 
+   border-top-right-radius:@tr; 
+   -webkit-border-top-right-radius:@tr; 
+   border-bottom-left-radius:@bl; 
+   -webkit-border-bottom-left-radius:@bl; 
+   border-bottom-right-radius:@br; 
+   -webkit-border-bottom-right-radius:@br; 
+}
+.blr(@l:39% 10%,@r:39% 10%){
+    border-bottom-left-radius: @l;
+    -webkit-border-bottom-left-radius: @l;
+    border-bottom-right-radius:@r;
+    -webkit-border-bottom-right-radius: @r;
+}
+.bdt(@l:39% 10%,@r:39% 10%){
+    border-top-left-radius: @l;
+    -webkit-border-top-left-radius: @l;
+    border-top-right-radius:@r;
+    -webkit-border-top-right-radius: @r;
+}
+.bdr(@br:1vw ,@s:solid,@col:gold){
+    border-right: @br @s @col;
+    -webkit-border-right: @br @s @col;
+}
+.bdb(@br:1vw ,@s:solid,@col:gold){
+    border-bottom: @br @s @col;
+    -webkit-border-bottom: @br @s @col;
+}
+.bdl(@br:1vw ,@s:solid,@col:gold){
+    border-left: @br @s @col;
+    -webkit-border-left: @br @s @col;
+}
+
+// triangle start
+//向上三角
+.triangle(top,@w:0.3125rem,@c:#ccc){
+ border-width:@w;
+ border-color:transparent transparent @c transparent;
+ border-style: dashed dashed solid dashed;
+}
+//向下三角
+.triangle(bottom,@w:0.3125rem,@c:#ccc){
+    border-width:@w;
+    border-color: @c transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+//向左
+.triangle(left,@w:0.3125rem,@c:#ccc){
+    border-width:@w;
+    border-color:transparent @c transparent transparent;
+    border-style:dashed solid dashed dashed;
+}
+
+//向右
+.triangle(right,@w:0.3125rem,@c:#ccc){
+    border-width:@w;
+    border-color:transparent transparent transparent @c;
+    border-style:dashed dashed dashed solid;
+ }
+ .triangle(@_,@w:0.3125rem,@c:#ccc){
+    width:0;
+    height: 0;
+    overflow: hidden;
+ }
+.bz{
+    background-size:100% 100%;
+}
+
+// animation
+.animation(@n:name,@t:1.5s,@speed:ease,@i:infinite,@a:alternate,@f:forwards){
+    -webkit-animation: @n @t @speed @i @a @f;
+    animation:  @n @t @speed @i @a @f;
+    -o-animation:  @n @t @speed @i @a @f;
+    -ms-animation:  @n @t @speed @i @a @f;
+    -moz-animation:@n @t @speed @i @a @f;
+}
+.animationSped(@n:name,@t:1.5s,@tt:5s,@speed:ease,@i:infinite,@f:forwards){
+    -webkit-animation: @n @t @tt @speed @i @f;
+    animation:  @n @t @tt @speed @i @f;
+    -o-animation:  @n @t @tt @speed @i @f;
+    -ms-animation:  @n @t @tt @speed @i @f;
+    -moz-animation: @n @t @tt @speed @i @f;
+}
+.animationSpedTwo(@n:name,@t:1.5s,@tt:5s,@speed:ease,@i:infinite,@a:alternate,@f:forwards){
+    -webkit-animation: @n @t @tt @speed @i @a @f;
+    animation:  @n @t @tt @speed @i @a @f;
+    -o-animation:  @n @t @tt @speed @i @a @f;
+    -ms-animation:  @n @t @tt @speed @i @a @f;
+    -moz-animation: @n @t @tt @speed @i @a @f;
+}
+
+.animaInfin(@n:name,@t:1.5s,@speed:ease,@i:infinite,@f:forwards){
+    -webkit-animation: @n @t @speed @i  @f;
+    -o-animation: @n @t @speed @i  @f;
+    -moz-animation: @n @t @speed @i  @f;
+    -ms-animation: @n @t @speed @i  @f;
+    animation:  @n @t @speed @i  @f;
+}
+.animaInCom(@n:name,@t:1.5s,@speed:ease,@f:forwards){
+    -webkit-animation: @n @t @speed @f;
+    -o-animation:  @n @t @speed @f;
+    -moz-animation: @n @t @speed @f;
+    -ms-animation: @n @t @speed @f;
+    animation: @n @t @speed @f;
+}
+.animaInCt(@n:name,@t:1.5s,@tt:5s,@speed:ease,@f:forwards){
+    -webkit-animation: @n @t @tt @speed @f;
+    -o-animation:  @n @t @tt @speed @f;
+    -moz-animation: @n @t @tt @speed @f;
+    -ms-animation: @n @t @tt @speed @f;
+    animation: @n @t @tt @speed @f;
+}
+
+.transition(@n:name,@t:1.5s,@speed:ease){
+    -webkit-transition: @n @t  @speed;
+    -o-transition:  @n @t  @speed;
+    -moz-transition: @n @t @speed;
+    -ms-transition: @n @t @speed;
+    transition: @n @t  @speed;
+}
+
+// .keyframes
+.keyframes(@name, @frames){
+    @-webkit-keyframes @name { @frames(); }
+    @-moz-keyframes @name { @frames(); }
+    @-o-keyframes @name { @frames(); }
+    @-ms-keyframes @name { @frames(); }
+    @keyframes @name { @frames(); }
+}
+
+// transfrom
+.transform(@attr){
+    -webkit-transform:@attr;
+    -o-transform:@attr;
+    -moz-transform:@attr;
+    -ms-transform:@attr;
+    transform:@attr;
+}
+.transformtwo(@attr:name,@atr:nam){
+    -webkit-transform:@attr @atr;
+    -moz-transform:@attr @atr;
+    -o-transform:@attr @atr;
+    -ms-transform:@attr @atr;
+    transform:@attr @atr;
+}
+
+// transfrom-origin
+.transformOrigin(@attr){
+    -webkit-transform-origin:@attr;
+    -o-transform-origin:@attr;
+    -moz-transform-origin:@attr;
+    -ms-transform-origin:@attr;
+    transform-origin:@attr;
+}
+
+// transform-style
+.transformStyle(@attr){
+    -webkit-transform-style:@attr;
+    -o-transform-style:@attr;
+    -moz-transform-style:@attr;
+    -ms-transform-style:@attr;
+    transform-style:@attr;
+}
+
+
+// backface-visibility
+.backfaceVisibility(@attr){
+    -webkit-backface-visibility:@attr;
+    -o-backface-visibility:@attr;
+    -moz-backface-visibility:@attr;
+    -ms-backface-visibility:@attr;
+    backface-visibility:@attr;
+}
+
+
+.tlTrans{
+    .pos(f);
+    top: 50%;
+    left: 50%;
+    .transform(translate(-50%,-50%));
+}
+
+// 文本溢出省略号显示一行
+.ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.transition{
+    transition-property: transform;
+    transition-duration: 0ms;
+    transform-origin: 0 0 0;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0ms;
+    -webkit-transform-origin: 0 0 0;
+}
+
+
+
+.whlt(@w:1vw,@h:1vw,@l:1vw,@t:1vw){ width: @w; height: @h;top:@l;left: @t;}
+
+.whbl(@w:1vw,@h:1vw,@l:1vw,@t:1vw){ width: @w; height: @h;bottom:@l;left: @t;}
+
+.whtr(@w:1vw,@h:1vw,@l:1vw,@t:1vw){ width: @w; height: @h;top:@l;right: @t;}
+.picwh{
+    img{
+      .wh(100%,100%);
+    }
+}
+
+// 公共色值
+@backColor:#ee882d;
+
+@innerC1:#fae897;
+
+@innerC2:#c05500;
+
+@fontC:#e37c24;
+
+.backColor(@angle:90deg,@color1:#fbd99e,@color2:#fbd99e){
+    background:linear-gradient(@angle, @color1, @color2);
+    background: -webkit-linear-gradient(@angle, @color1, @color2);    
+}
+.backlg(@angle:90deg,@color1:#fbd99e 0%,@color2:#fbd99e 50% ,@color3:#fbd99e 50%){
+    background:linear-gradient(@angle, @color1, @color2,@color3);
+    background: -webkit-linear-gradient(@angle, @color1, @color2 ,@color3); 
+}
+
+.bg(@color:#fbd99e){
+    background:@color;
+}
+.textshadow(@a:1px,@b:1px,@c:1px,@color:#000){
+    text-shadow:@a @b @c @color;
+    -webkit-text-shadow: @a @b @c @color;;
+}
+.boxshadow(@a:1px,@b:1px,@c:1px,@color:#000,@i:inset){
+    box-shadow:@a @b @c @color @i;
+    -webkit-box-shadow: @a @b @c @color @i;
+}
+.boxsd(@a:1px,@b:1px,@c:1px,@color:#000){
+    box-shadow:@a @b @c @color;
+    -webkit-box-shadow: @a @b @c @color;
+}
+.tf(@l:linear){
+    -webkit-transition-timing-function: @l; /*之前是ease-out*/
+    -moz-transition-timing-function: @l;
+    -ms-transition-timing-function: @l;
+    -o-transition-timing-function: @l;
+    transition-timing-function: @l;
+}
